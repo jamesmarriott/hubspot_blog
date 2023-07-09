@@ -4,6 +4,7 @@
 <section id="blog-posts" class="text-color-green background-color-black">
   <div class="content-wrapper">
     <h1 class="blog-posts-title text-transform-uppercase">{{ module.blog_cards_header }}</h1>
+    <h2 class="blog-posts-title text-transform-uppercase">{{ module.blog_cards_subheader }}</h1>
     <div class="blog-posts-wrapper">
       {% for recent_blog_post in recent_blog_posts %}
       <a href="{{ recent_blog_post.url }}" class="blog-post-card background-color-black">

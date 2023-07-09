@@ -1,8 +1,15 @@
 [
   {
-    "default": "Hands-On AI for Developers",
+    "default": "Hands-On AI",
     "label": "Blog Cards Header",
     "name": "blog_cards_header",
+    "required": true,
+    "type": "text"
+  },
+  {
+    "default": "The only winning move is to play",
+    "label": "Blog Cards Subheader",
+    "name": "blog_cards_subheader",
     "required": true,
     "type": "text"
   },

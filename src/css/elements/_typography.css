@@ -53,12 +53,12 @@ h5 {
   line-height: var(--plmg-font-lineheight-loose);
 }
 
-h2,
+/* h2,
 h3,
 h4,
 h5 {
   font-weight: var(--plmg-font-weight-semibold);
-}
+} */
 
 .body-text-1,
 .body-text-2,
