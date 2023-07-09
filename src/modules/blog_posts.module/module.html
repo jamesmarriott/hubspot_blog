@@ -1,12 +1,12 @@
 {{ require_css(get_asset_url("/james-marriott-personal-website-theme/css/main.css")) }}
 {% set recent_blog_posts = blog_recent_posts("default", 6) %}
 
-<section id="blog-posts">
+<section id="blog-posts" class="text-color-green background-color-black">
   <div class="content-wrapper">
-    <h1 class="blog-posts-title">{{ module.blog_cards_header }}</h1>
+    <h1 class="blog-posts-title text-transform-uppercase">{{ module.blog_cards_header }}</h1>
     <div class="blog-posts-wrapper">
       {% for recent_blog_post in recent_blog_posts %}
-      <a href="{{ recent_blog_post.url }}" class="blog-post-card">
+      <a href="{{ recent_blog_post.url }}" class="blog-post-card background-color-black">
         <div class="blog-post-card-featured-image">
           <img src="{{ recent_blog_post.featured_image }}" alt="{{ recent_blog_post.publish_date }}" />
         </div>
@@ -21,7 +21,7 @@
           </div>
           <h4 class="blog-post-card-title">{{ recent_blog_post.name }}</h4>
           <div class="blog-post-author">{{ recent_blog_post.author.full_name }}</div>
-          <p class="blog-post-description body-text-3">{{ recent_blog_post.meta_description }}</p>
+          <p class="blog-post-description body-text-3 text-color-green">{{ recent_blog_post.meta_description }}</p>
           {% for tag in recent_blog_post.tag_list %}
           <span class="blog-post-card-tag body-text-4"
             >{{ tag }}</span

@@ -22,7 +22,7 @@ Non-cosmetic design patterns including grid and layout classes)
 /* Elements
 Base HMTL elements are styled in this section (<body>, <h1>, <a>, <p>, <button> etc.)
 */
-
+{% include './elements/_backgrounds.css' %}
 {% include './elements/_typography.css' %}
 {% include './elements/_buttons.css' %}
 {% include './elements/_forms.css' %}
