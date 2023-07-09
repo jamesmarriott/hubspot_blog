@@ -66,8 +66,8 @@
           }
         },
         "default": {
-          "fallback": "sans-serif",
-          "font": "Lato",
+          "fallback": "san-serif",
+          "font": "Martel Sans",
           "font_set": "GOOGLE"
         }
       },
@@ -88,8 +88,8 @@
           }
         },
         "default": {
-          "fallback": "serif",
-          "font": "Merriweather",
+          "fallback": "san-serif",
+          "font": "Martel Sans",
           "font_set": "GOOGLE"
         }
       }
@@ -108,17 +108,17 @@
         "max": 500,
         "min": 0,
         "suffix": "px",
-        "default": 80
+        "default": 0
       },
       {
         "label": "Maximum content width",
         "name": "maximum_content_width",
         "type": "number",
         "display": "slider",
-        "max": 2500,
-        "min": 900,
-        "suffix": "px",
-        "default": 1240
+        "max": "",
+        "min": "",
+        "suffix": "vw",
+        "default": ""
       }
     ]
   },

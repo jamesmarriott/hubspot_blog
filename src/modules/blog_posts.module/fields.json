@@ -1,0 +1,46 @@
+[
+  {
+    "default": "Hands-On AI for Developers",
+    "label": "Blog Cards Header",
+    "name": "blog_cards_header",
+    "required": true,
+    "type": "text"
+  },
+  {
+    "id": "blog_main_link_text",
+    "name": "blog_main_link",
+    "display_width": null,
+    "label": "More Blog Posts",
+    "required": true,
+    "locked": false,
+    "validation_regex": "",
+    "allow_new_line": false,
+    "show_emoji_picker": false,
+    "type": "text",
+    "default": "Learn More"
+  },
+  {
+    "label": "Link Button",
+    "name": "link_button",
+    "type": "link",
+    "supported_types": [
+      "EXTERNAL",
+      "CONTENT"
+    ],
+    "default": {
+      "url": {
+        "href": "https://jamesmarriott.info/blog",
+        "type": "EXTERNAL"
+      },
+      "no_follow": false,
+      "open_in_new_tab": true
+    }
+  },
+  {
+    "label": "Link Button Text",
+    "name": "link_text",
+    "default": "More Blog Posts",
+    "type": "text",
+    "required": false
+  }
+]

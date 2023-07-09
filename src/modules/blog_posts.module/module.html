@@ -1,0 +1,53 @@
+{{ require_css(get_asset_url("/james-marriott-personal-website-theme/css/main.css")) }}
+{% set recent_blog_posts = blog_recent_posts("default", 6) %}
+
+<section id="blog-posts">
+  <div class="content-wrapper">
+    <h1 class="blog-posts-title">{{ module.blog_cards_header }}</h1>
+    <div class="blog-posts-wrapper">
+      {% for recent_blog_post in recent_blog_posts %}
+      <a href="{{ recent_blog_post.url }}" class="blog-post-card">
+        <div class="blog-post-card-featured-image">
+          <img src="{{ recent_blog_post.featured_image }}" alt="{{ recent_blog_post.publish_date }}" />
+        </div>
+        <div class="blog-post-card-content-container">
+          <div class="blog-post-card-date-author-container">
+            <time class="blog-post-card-date body-text-4"
+              >{{ recent_blog_post.publish_date.strftime("%d.%m.%Y") }}</time
+            >
+            <span class="blog-post-author body-text-4"
+              >{{ recent_blog_post.blog_author.full_name }}</span
+            >
+          </div>
+          <h4 class="blog-post-card-title">{{ recent_blog_post.name }}</h4>
+          <div class="blog-post-author">{{ recent_blog_post.author.full_name }}</div>
+          <p class="blog-post-description body-text-3">{{ recent_blog_post.meta_description }}</p>
+          {% for tag in recent_blog_post.tag_list %}
+          <span class="blog-post-card-tag body-text-4"
+            >{{ tag }}</span
+          >
+          {% endfor %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+    <!-- <div class="blog-posts-button-wrapper">
+      {# Sets attributes used for the link field #}
+      {% set href = module.link_button.url.href %}
+      {% set rel = [] %}
+      {% if module.link_button.no_follow %}
+        {% do rel.append("nofollow") %}
+      {% endif %}
+      <a
+        class="body-text-2 button-link button-link-light"
+        href="{{ href }}"
+        {% if rel %}rel="{{ rel|join(" ") }}"
+        {% endif %}
+      >
+        {{ module.link_text }}
+        <span class="button-icon">&#8594;</span>
+      </a>
+    </div> -->
+  </div>
+</section>
