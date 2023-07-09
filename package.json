@@ -1,10 +1,10 @@
 {
-  "name": "@hubspot/cms-theme-boilerplate",
-  "version": "3.13.0",
-  "description": "Boilerplate project for building websites on the HubSpot CMS",
+  "name": "@james-marriott/personal_website",
+  "version": "0.0.1",
+  "description": "Personal Website",
   "repository": {
     "type": "git",
-    "url": "git@git.hubteam.com:HubSpot/cms-theme-boilerplate.git"
+    "url": "https://github.com/jamesmarriott/personal_website"
   },
   "author": "",
   "license": "Apache-2.0",
@@ -18,8 +18,11 @@
   "scripts": {
     "autoprefixer": "postcss src/css/**/*.css src/modules/**/*.css !src/**/_layout.css !src/**/_normalize.css !src/**/_reset.css !src/**/_macros.css !src/**/main.css !src/**/theme-overrides.css --use autoprefixer --replace --no-map",
     "eslint": "eslint src",
+    "fetch": "hs fetch james-marriott-personal-website-theme src",
     "lint": "eslint src && prettier --list-different 'src/**/*.js' 'src/**/*.json'",
-    "prettier:write": "prettier --write 'src/**/*.js' 'src/**/*.json'"
+    "prettier:write": "prettier --write 'src/**/*.js' 'src/**/*.json'",
+    "upload": "hs upload src james-marriott-personal-website-theme",
+    "watch": "hs watch src james-marriott-personal-website-theme"
   },
   "browserslist": [
     "defaults",

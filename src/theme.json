@@ -1,9 +1,9 @@
 {
-  "label": "CMS theme boilerplate",
+  "label": "James Marriott Website Page",
   "author": {
-    "name": "HubSpot",
-    "email": "hs-content-assets@hubspot.com",
-    "url": "https://www.hubspot.com/"
+    "name": "James Marriott",
+    "email": "sawheadproductions@gmail.com",
+    "url": "https://www.jamesmarriott.info"
 	},
   "documentation_url": "https://developers.hubspot.com/docs/cms/building-blocks/themes/hubspot-cms-boilerplate",
   "example_url": "https://boilerplate.hubspotcms.com",
