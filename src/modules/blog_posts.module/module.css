@@ -20,7 +20,7 @@
   min-height: 0;
   overflow: hidden;
   grid-column-gap: var(--plmg-spacing-x1-5);
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   row-gap: var(--plmg-spacing-x1-5);
   margin-bottom: var(--plmg-spacing-x2-5);
 }
