@@ -3,7 +3,7 @@
 header {
   padding-left: calc(var(--plmg-spacing-x2-5) * 3);
   padding-right: calc(var(--plmg-spacing-x2-5) * 3);
-  /* padding-top: var(--plmg-spacing-x5);  */
+  padding-top: var(--plmg-spacing-x2-5);
   z-index: 99;
   position: sticky;
 }

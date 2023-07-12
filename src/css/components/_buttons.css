@@ -1,3 +1,7 @@
+a:visited{
+  color: black;
+}
+
 .button-link {
   display: flex;
   flex-direction: row;
@@ -8,7 +12,6 @@
   width: fit-content;
   padding: var(--plmg-spacing-x1) 0;
   text-align: left;
-  font-family: 'Courier New', monospace;
   font-weight: var(--plmg-font-weight-regular);
   /* Add a margin to the bottom of the button, so that the button doesn't jump when the hover state is applied */
   margin-bottom: var(--plmg-border-width-s);

@@ -39,7 +39,6 @@
 .menu__link {
   text-decoration: none;
   /* color: var(--plmg-color-text-neutral-weak-dark); */
-  /* font-family: var(--plmg-font-family-sans); */
   font-size: var(--plmg-font-size-x1-125);
 }
 

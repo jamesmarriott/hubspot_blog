@@ -4,6 +4,10 @@ html[lang^="ja"] body {
   word-break: break-all;
 }
 
+body{
+  font-family: 'Manrope', sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -15,7 +19,6 @@ td,
 th,
 span,
 time {
-  font-family: 'Manrope', sans-serif;
   margin-block-start: 0;
   margin-block-end: 0;
 }

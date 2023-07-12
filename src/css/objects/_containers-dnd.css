@@ -4,18 +4,24 @@
 }
 
 @media screen and (min-width: 1380px) {
+  .body-container {
+    max-width: 90dvw;
+    margin: 0 auto;
+    /* padding-top: var(--plmg-spacing-x5);  */
+  }
+  
   .content-wrapper {
     padding: 0;
   }
 }
+
 
 .dnd-section > .row-fluid {
   margin: 0 auto;
 }
 
 .dnd-section .dnd-column {
-  padding: 0 1rem;
-  
+  padding: 0 1rem;  
 }
 
 @media (max-width: 767px) {

@@ -81,7 +81,6 @@
   display: inline-block;
   margin-bottom: var(--plmg-spacing-x0-5);
   color: var(--plmg-color-text-neutral-disabled);
-  /* font-family: var(--plmg-font-family-sans); */
 }
 
 .blog-post-card-date {
@@ -111,7 +110,6 @@
   padding: var(--plmg-spacing-x0-5) var(--plmg-spacing-x1);
   margin-bottom: 0 var(--plmg-spacing-x2) var(--plmg-spacing-x2)
     var(--plmg-spacing-x2);
-  /* font-family: var(--plmg-font-family-sans); */
 }
 
 /* Large (1280px - 1919px) */
