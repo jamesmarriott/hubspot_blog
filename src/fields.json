@@ -1548,7 +1548,7 @@
                   }
                 },
                 "default": {
-                  "color": "#FFFFFF"
+                  "color": "#000"
                 }
               }
             ]
@@ -1568,7 +1568,8 @@
                   }
                 },
                 "default": {
-                  "opacity": 100
+                  "opacity": 100,
+                  "color": "#000"
                 }
               }
             ]
@@ -1838,7 +1839,7 @@
                     "name": "color",
                     "type": "color",
                     "default": {
-                      "color": "#FFFFFF",
+                      "color": "#000",
                       "opacity": 100
                     }
                   }

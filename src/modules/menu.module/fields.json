@@ -3,7 +3,7 @@
     "label": "Menu",
     "name": "menu",
     "type": "menu",
-    "default": "default"
+    "default": "Main"
   },
   {
     "label": "Max levels",
@@ -80,9 +80,9 @@
             "type": "group",
             "children": [
               {
-                "label" : "Border",
-                "name" : "border",
-                "type" : "border"
+                "label": "Border",
+                "name": "border",
+                "type": "border"
               }
             ]
           }

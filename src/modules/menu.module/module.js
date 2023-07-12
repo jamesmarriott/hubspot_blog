@@ -2,18 +2,16 @@
 
 var menuParentItems = document.querySelectorAll('.menu--desktop .menu__item--has-submenu');
 var childToggle = document.querySelectorAll('.menu--mobile .menu__child-toggle');
+var menuItemWithSubmenu = document.querySelectorAll('.menu--mobile .menu__item--has-submenu');
 
 // Desktop menu
-
 if (menuParentItems) {
   Array.prototype.forEach.call(menuParentItems, function(el){
 
     // Menu item variables
-
     var childToggle = el.querySelector('.menu__child-toggle');
 
     // Handles hover over
-
     el.addEventListener('mouseover', function(){
       this.classList.add('menu__item--open');
       this.querySelector('a').setAttribute('aria-expanded', 'true');
@@ -21,7 +19,6 @@ if (menuParentItems) {
     });
 
     // Handles hover out
-
     el.addEventListener('mouseout', function(){
       document.querySelector('.menu__item--open > a').setAttribute('aria-expanded', 'false');
       document.querySelector('.menu__item--open > button').setAttribute('aria-expanded', 'false');
@@ -29,7 +26,6 @@ if (menuParentItems) {
     });
 
     // Handles toggle of submenus
-
     childToggle.addEventListener('click', function(){
       if (this.parentNode.classList.contains('menu__item--open')) {
         this.parentNode.classList.remove('menu__item--open');
@@ -70,3 +66,17 @@ if (childToggle) {
 
   });
 }
+
+if (menuItemWithSubmenu) {
+ // trigger the same click event on the button when the link is clicked
+  Array.prototype.forEach.call(menuItemWithSubmenu, function(el){
+    var link = el.querySelector('a');
+    link.addEventListener('click', function(e){
+      e.preventDefault();
+      var button = el.querySelector('button');
+      button.click();
+    });
+  }
+  );
+}
+

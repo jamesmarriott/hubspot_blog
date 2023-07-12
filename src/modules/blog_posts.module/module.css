@@ -58,7 +58,7 @@
 }
 
 .blog-post-card:hover .blog-post-card-title {
-  color: #0000ff;
+  /* color: #0000ff; */
 }
 
 .blog-post-card-featured-image {
